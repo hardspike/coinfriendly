@@ -1013,5 +1013,9 @@ hr {
     #aboutMeBox div {
         width: 300px;
         margin-right: calc(50% - 150px);
+        margin: 0;
+    }
+    .aboutBox:nth-of-type(2) {
+        padding: 10px 0px;
     }
 }
