@@ -26,7 +26,7 @@ if (sessionStorage.length > 0) {
     }
 }
 $("nav h2").click(function () {
-    document.location.href = "/index.html";
+    document.location.href = "/";
 });
 
 //IIFE
