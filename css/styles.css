@@ -1,0 +1,1017 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: monospace;
+}
+html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 75%;
+    background-image: url(../assets/images/headerbg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#mainHeadlineText {
+    font-weight: bold;
+    font-size: 45px;
+    mix-blend-mode: screen;
+    background-color: rgba(244, 242, 211, 1);
+    left: 50%;
+    top: 50%;
+    margin-top: -27.5px;
+    margin-left: -270px;
+    padding: 0;
+    position: absolute;
+
+}
+nav {
+    font-family: "Doppio One";
+    width: 100%;
+    height: 43px;
+    border-radius: 10px;
+    background-color: rgb(244, 242, 211);
+}
+nav i {
+    font-size: 0.7em;
+    margin: 0 2px;
+    position: relative;
+    z-index: -1;
+    color: rgb(175, 226, 98);
+}
+nav h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    z-index: 99;
+    left: 5px;
+    margin-top: 4px;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px black,
+    -1.5px -1.5px 2px black,
+    -1.5px 1.5px 2px black,
+    1.5px -1.5px 2px black;
+    background-color: limegreen;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    padding: 1px 5px;
+}
+nav h2:hover {
+    cursor: pointer;
+    text-shadow: 2px 2px 2px black,
+    -2px -2px 2px black,
+    -2px 2px 2px black,
+    2px -2px 2px black;
+}
+nav ul {
+    width: 325px;
+    margin: auto !important;
+}
+.nav-link {
+    color: limegreen;
+    font-size: 20px;
+}
+.nav-link:hover {
+    color: forestgreen;
+}
+.nav-link:active {
+    color: darkgreen;
+}
+.active {
+    background: limegreen !important;
+}
+
+main {
+    min-height: 70%;
+    width: 100%;
+    background-image:url(../assets/images/mainbg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Doppio One', sans-serif;
+    overflow: hidden;
+}
+#contentBox {
+    display: block;
+    border: 3px solid limegreen;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(244, 242, 211, 0.5);
+}
+#contentBox2 {
+    display: block;
+    overflow: hidden;
+    border: 3px solid limegreen;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(244, 242, 211, 0.5);
+}
+#contentBox3 {
+    display: block;
+    border: 3px solid limegreen;
+    height: auto;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(244, 242, 211, 0.5);
+    padding-top: 15px;
+}
+#coinsBox {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.card {
+    display: inline-block;
+    padding-top: 15px;
+    border: 5px solid beige;
+    margin: 25px;
+    height: 250px;
+    width: 350px;
+    background-color: rgba(244, 242, 211, 0.5);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    font-family: 'Doppio One', sans-serif;
+    box-shadow: 2px 2px 2px limegreen,
+    -2px -2px 2px limegreen,
+    2px -2px 2px limegreen,
+    -2px 2px 2px limegreen;
+}
+.symbolPara {
+    font-weight: bold;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white;
+    margin-bottom: 0;
+}
+.idPara {
+    font-family: monospace;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white;
+}
+.infoBtn {
+    transition: 0.4s;
+    border: none;
+    border-radius: 5px;
+    background-color: limegreen;
+    color: rgb(244, 242, 211);
+}
+.infoBtn:hover {
+    background-color: forestgreen;
+    cursor: pointer;
+}
+.infoBtn:active {
+    background-color: darkgreen;
+}
+.infoBtn:focus {
+    outline: none;
+}
+.collapser {
+        width: 220px;
+        padding: 0 5px;
+        background-color: transparent;
+        max-height: 0;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: max-height 0.6s ease-in-out;
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 65px;
+        transition: 0.6s;
+}
+.activeColl {
+    max-height: 100px;
+    height: 100px;
+    border: 1px solid white;
+    box-shadow: 2px 2px 3px forestgreen,
+    -2px -2px 3px forestgreen,
+    2px -2px 3px forestgreen,
+    -2px 2px 3px forestgreen;
+    background-color: rgba(185, 183, 154, 0.7);
+    font-family: 'Doppio One', sans-serif;
+    font-size: 13px;
+    color: black;
+    text-shadow: 1px 1px 1px white,
+    -1px -1px 1px white,
+    -1px 1px 1px white,
+    1px -1px 1px white;
+    font-weight: bold;
+}
+.coinSymbols {
+    color: forestgreen;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    -1px 1px 1px black,
+    1px -1px 1px black,
+    2px 2px 2px limegreen,
+    -2px -2px 2px limegreen,
+    -2px 2px 22px limegreen,
+    2px -2px 2px limegreen;
+}
+.card img {
+    filter:drop-shadow(1px 1px black)
+    drop-shadow(-1px -1px black)
+    drop-shadow(1px -1px black)
+    drop-shadow(-1px 1px black);
+}
+.contentHeader {
+    font-family: monospace;
+    font-weight: bold;
+    color: limegreen;
+    font-size: 45px;
+    letter-spacing: 25px;
+    font-style: italic;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    -1px 1px 1px black,
+    1px -1px 1px black,
+    5px 5px 5px beige,
+    -5px -5px 5px beige,
+    -5px 5px 5px beige,
+    5px -5px 5px beige;
+    margin-top: 30px;
+}
+.bufferIcon {
+    width: 25%;
+    height: auto;
+    filter: drop-shadow(1px 1px 3px beige) 
+    drop-shadow(-1px -1px 3px beige)
+    drop-shadow(1px -1px 3px beige)
+    drop-shadow(-1px 1px 3px beige);
+    animation: buffering1 1s infinite linear;
+}
+#modal .bufferIcon {
+    width: 250px;
+    animation: buffering3 1s infinite linear;
+}
+#mainBufferIcon {
+    width: 25%;
+    height: auto;
+    filter: drop-shadow(2px 2px 6px limegreen)
+    drop-shadow(-2px -2px 6px limegreen)
+    drop-shadow(-2px 2px 6px limegreen)
+    drop-shadow(2px -2px 6px limegreen);
+    animation: buffering2 1s infinite linear;
+}
+
+@keyframes buffering1 {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(1px 1px 1px beige) 
+            drop-shadow(-1px -1px 1px beige)
+            drop-shadow(1px -1px 1px beige)
+            drop-shadow(-1px 1px 1px beige);
+    }
+    50% {
+
+        filter: drop-shadow(1px 1px 1px forestgreen) 
+            drop-shadow(-1px -1px 1px forestgreen)
+            drop-shadow(1px -1px 1px forestgreen)
+            drop-shadow(-1px 1px 1px forestgreen);
+    }
+    100% {
+        transform: rotate(359deg);
+        filter: drop-shadow(1px 1px 1px beige) 
+            drop-shadow(-1px -1px 1px beige)
+            drop-shadow(1px -1px 1px beige)
+            drop-shadow(-1px 1px 1px beige);
+    }
+}
+@keyframes buffering2 {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(2px 2px 6px limegreen)
+    drop-shadow(-2px -2px 6px limegreen)
+    drop-shadow(-2px 2px 6px limegreen)
+    drop-shadow(2px -2px 6px limegreen);
+    }
+    50% {
+
+        filter: drop-shadow(2px 2px 6px beige)
+    drop-shadow(-2px -2px 6px beige)
+    drop-shadow(-2px 2px 6px beige)
+    drop-shadow(2px -2px 6px beige);
+    }
+    100% {
+        transform: rotate(359deg);
+        filter: drop-shadow(2px 2px 6px limegreen)
+    drop-shadow(-2px -2px 6px limegreen)
+    drop-shadow(-2px 2px 6px limegreen)
+    drop-shadow(2px -2px 6px limegreen);
+    }
+}
+@keyframes buffering3 {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(2px 2px 6px beige)
+    drop-shadow(-2px -2px 6px beige)
+    drop-shadow(-2px 2px 6px beige)
+    drop-shadow(2px -2px 6px beige);
+    }
+    50% {
+
+        filter: drop-shadow(2px 2px 6px deepskyblue)
+    drop-shadow(-2px -2px 6px dodgerblue)
+    drop-shadow(-2px 2px 6px deepskyblue)
+    drop-shadow(2px -2px 6px dodgerblue);
+    }
+    100% {
+        transform: rotate(359deg);
+        filter: drop-shadow(2px 2px 6px beige)
+    drop-shadow(-2px -2px 6px beige)
+    drop-shadow(-2px 2px 6px beige)
+    drop-shadow(2px -2px 6px beige);
+    }
+}
+.toggleButton {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 0;
+    
+}
+.toggleButton:focus {
+    outline: none;
+}
+.toggled {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 26px;
+    width: 26px;
+    border-radius: 13px;
+    border-width: 2px;
+    border-style: outset;
+    background-color: deepskyblue;
+}
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 5%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#modalContent {
+    margin: auto;
+    margin-top: 7%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    overflow: auto;
+    box-shadow: 4px 4px 20px dodgerblue,
+        -4px -4px 20px deepskyblue,
+        -4px 4px 20px dodgerblue,
+        4px -4px 20px deepskyblue;
+    border-radius: 10px;
+    background-color: rgba(244, 242, 211, 0.9);
+    font-family: 'Acme';
+}
+.modalHeader {
+    font-family: 'Acme';
+    font-size: 2.5vw;
+    color: black;
+    text-shadow: 2px 2px 2px dodgerblue,
+        -2px -2px 2px deepskyblue,
+        2px -2px 2px dodgerblue,
+        -2px 2px 2px deepskyblue;
+}
+h2.modalHeader {
+    font-size: 2vw;
+}
+.toggledCoinDiv {
+    display: inline-block;
+    margin: 20px 0 20px 15px;
+    height: 100px;
+    width: 150px;
+}
+.toggledCoinDiv:hover {
+    border-right: 1.5px solid deepskyblue;
+    border-left: 1.5px solid deepskyblue;
+    border-radius: 5px;
+}
+#modal .toggleButton {
+    position: unset;
+    display: inline-block;
+    margin: 0;
+    margin-left: 5px;
+
+}
+#modal .toggled {
+    position: unset;
+    display: inline-block;
+    margin-top: 5px;
+}
+#modal img {
+    margin-left: 4px;
+    filter: drop-shadow(1px 1px 1px black)
+    drop-shadow(-1px -1px 1px black)
+    drop-shadow(1px -1px 1px black)
+    drop-shadow(-1px 1px 1px black);
+}
+.toggledCoinID {
+    font-family: 'Doppio One';
+    font-weight: bold;
+    margin-top: 3px;
+    display: block;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+@keyframes fadeOutLeft {
+    0% {
+    opacity: 1;
+    position: absolute;
+    left: 10%;
+}
+    100% {
+        opacity: 0;
+        position: absolute;
+        left: -10%;
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+    opacity: 0;
+    position: absolute;
+    right: -10%;
+}
+    100% {
+        opacity: 1;
+        position: absolute;
+        right: 10%;
+    }
+}
+@keyframes fadeOutRight {
+    0% {
+    opacity: 1;
+    position: absolute;
+    right: 10%;
+}
+    100% {
+        opacity: 0;
+        position: absolute;
+        right: -10%;
+    }
+}
+@keyframes fadeInRight {
+    0% {
+    opacity: 0;
+    position: absolute;
+    left: -10%;
+}
+    100% {
+        opacity: 1;
+        position: absolute;
+        left: 10%;
+    }
+}
+
+
+#chartContainer {
+    display: inline-block;
+    height: 700px;
+    width: 90%;
+    margin: 16px 0;
+    border: 2px solid black;
+}
+#sorry {
+    display: block;
+    margin-top: 5%;
+}
+#noCoins {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: "Acme";
+    font-size: 35px;
+    text-shadow: 1px 1px 1px white,
+    -1px -1px 1px white,
+    -1px 1px 1px white,
+    1px -1px 1px white,
+    5px 5px 50px limegreen,
+    -5px -5px 50px limegreen,
+    5px -5px 50px limegreen,
+    -5px 5px 50px limegreen;
+}
+#noValues {
+    display: inline-block;
+    margin-top: 50px;
+    font-family: "Acme";
+    font-size: 35px;
+    text-shadow: 1px 1px 1px white,
+    -1px -1px 1px white,
+    -1px 1px 1px white,
+    1px -1px 1px white,
+    5px 5px 50px red,
+    -5px -5px 50px red,
+    5px -5px 50px red,
+    -5px 5px 50px red;
+}
+#contentBox3 h2 {
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white,
+    5px 5px 10px deepskyblue,
+    -5px -5px 10px dodgerblue,
+    5px -5px 10px deepskyblue,
+    -5px 5px 10px dodgerblue;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.miniHeader {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white,
+    5px 5px 10px limegreen,
+    -5px -5px 10px limegreen,
+    5px -5px 10px limegreen,
+    -5px 5px 10px limegreen;
+}
+.aboutBox {
+    display: inline-block;
+    height: 300px;
+    width: 90%;
+    margin: 0;
+    overflow: auto;
+    padding: 25px;
+    color: black;
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white,
+    5px 5px 20px white,
+    -5px -5px 20px white,
+    5px -5px 20px white,
+    -5px 5px 20px white;
+}
+.aboutBox:nth-of-type(2) {
+    height: 250px;
+}
+.aboutBox img {
+    float: left;
+    width: 200px;
+    border-radius: 10px;
+    filter: drop-shadow(2px 2px 2px white)
+    drop-shadow(-2px -2px 2px white)
+    drop-shadow(-2px 2px 2px white)
+    drop-shadow(2px 2px 2px white);
+    border: 3px solid black;
+}
+#aboutMeBox {
+    display: inline-block;
+    margin: auto;
+}
+#aboutMeBox div {
+    float: right;
+    margin-top: 28px;
+    margin-left: 28px;
+    width: 400px;
+    font-weight: bold;
+    text-align: left;
+}
+.aboutBox:hover {
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7),
+    -1px -1px 5px rgba(0,0,0,0.7),
+    1px -1px 5px rgba(0,0,0,0.7),
+    -1px 1px 5px rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+.emphasis {
+    text-shadow: 2px 2px 2px white,
+    -2px -2px 2px white,
+    2px -2px 2px white,
+    -2px 2px 2px white,
+    5px 5px 10px limegreen,
+    -5px -5px 10px limegreen,
+    5px -5px 10px limegreen,
+    -5px 5px 10px limegreen;
+    font-weight: bold;
+}
+.aboutBox::-webkit-scrollbar {
+    width: 10px;
+}
+.aboutBox::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+}
+.aboutBox::-webkit-scrollbar-thumb {
+    background: deepskyblue;
+    border-radius: 5px;
+}
+.aboutBox::-webkit-scrollbar-thumb:hover {
+    background: dodgerblue; 
+}
+hr {
+    width: 80%;
+    filter: drop-shadow(2px 2px 1px white)
+    drop-shadow(-2px -2px 1px white)
+    drop-shadow(2px -2px 1px white)
+    drop-shadow(-2px 2px 1px white);
+    border: 0.8px solid black;
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#searchWrapper {
+    display: block;
+    height: 46px;
+    margin-bottom: 20px;
+}
+#searchBtn {
+    position: absolute;
+    z-index: 3;
+    left: calc(50% - 24.5px);
+    font-size: 35px;
+    background-color: limegreen;
+    color: white;
+    margin: auto;
+    border: unset;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 8px;
+    padding-top: 2px;
+    outline: unset;
+    width: 48.5px;
+    transition: width 0.5s, left 0.5s;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+}
+#searchBtn:hover {
+    cursor: pointer;
+    filter: brightness(110%);
+}
+.clickedSearchBtn {
+    width: 200px !important;
+    left: calc(50% - 100px) !important;
+    height: 44px;
+    animation: searchFade 0.8s;
+}
+#searchContainer {
+    position: absolute;
+    z-index: 1;
+    left: calc(50% - 100px);
+    width: 200px;
+    background-color: limegreen;
+    margin: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 9px;
+    transition: all 0.5s linear;
+}
+#searchBox {
+    border: unset;
+    border-radius: 10px;
+    color: black;
+    outline: unset;
+    padding: 2px;
+    font-weight: bold;
+}
+@keyframes searchFade {
+    60% { opacity: 1}
+    100% {opacity: 0}
+}
+#countContainer {
+    position: absolute;
+    width: 150px;
+    background-color: limegreen;
+    border-bottom-right-radius: 20px;
+    padding: 8px;
+    
+}
+#countContainer label {
+    color: white;
+    margin-right: 6px;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+    
+}
+#countBox {
+    width: 50%;
+    border: unset;
+    border-radius: 10px;
+    color: black;
+    outline: unset;
+    padding: 4px;
+    font-weight: bold;
+}
+#countGuidance {
+    display: block;
+    margin-bottom: 0;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black,
+    -1px -1px 1px black,
+    1px -1px 1px black,
+    -1px 1px 1px black;
+}
+
+/* ----Responsive---- */
+
+/* ---iPad--- */
+
+@media screen and (max-width: 768px) {
+    #contentBox, #contentBox2, #contentBox3 {
+        width: 95%;
+    }
+    header {
+        height: 60%;
+    }
+    nav h2 {
+        left: 2.5%;
+    }
+    .card {
+        margin: 20px;
+        width: 300px;
+    }
+    .collapser {
+        margin-left: 40px;
+    }
+    .activeColl {
+        font-size: 15px;
+    }
+    #modalContent {
+        width: 80%;
+    }
+    .modalHeader {
+        font-size: 35px;
+    }
+    h2.modalHeader {
+        font-size: 30px;
+    }
+    .toggledCoinDiv {
+        display: inline-block;
+        margin: 20px 0 20px 15px;
+        height: 150px;
+        width: 200px;
+    }
+    .toggledCoinID {
+        font-size: 25px;
+    }
+    #modal .toggleButton {
+        transform: scale(1.2);
+    }
+    #modal img {
+        width: 40px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    .toggledCoinDiv:hover {
+        border-right: 3px solid deepskyblue;
+        border-left: 3px solid deepskyblue;
+    }
+    #modal .btn {
+        font-size: 22px;
+        margin-left: 5px;
+    }
+    #searchWrapper {
+        transform: scale(1.2);
+    }
+    #countContainer {
+        left: 8%;
+    }
+    @keyframes fadeOutLeft {
+        0% {
+        opacity: 1;
+        position: absolute;
+        left: 2.5%;
+    }
+        100% {
+            opacity: 0;
+            position: absolute;
+            left: -102.5%;
+        }
+    }
+    @keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        position: absolute;
+        right: -102.5%;
+    }
+        100% {
+            opacity: 1;
+            position: absolute;
+            right: 2.5%;
+        }
+    }
+    @keyframes fadeOutRight {
+        0% {
+        opacity: 1;
+        position: absolute;
+        right: 2.5%;
+    }
+        100% {
+            opacity: 0;
+            position: absolute;
+            right: -102.5%;
+        }
+    }
+    @keyframes fadeInRight {
+        0% {
+        opacity: 0;
+        position: absolute;
+        left: -102.5%;
+    }
+        100% {
+            opacity: 1;
+            position: absolute;
+            left: 2.5%;
+        }
+    }
+    #chartContainer {
+        height: 400px;
+    }
+    .aboutBox:nth-of-type(2) {
+        text-align: center !important;
+    }
+    .aboutBox img {
+        display: inline-block;
+        margin-left: calc(50% - 100px);
+        width: 200px;
+    }
+    #aboutMeBox div {
+        display: inline-block;
+        margin-right: calc(50% - 200px);
+        width: 400px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+}
+
+/* ---Mobile--- */
+
+@media screen and (max-width: 600px) {
+    #mainHeadlineText {
+        font-size: 35px;
+        left: 70%;
+        margin-top: -27.5px;
+        margin-left: -70%;
+    }
+    #contentBox, #contentBox2, #contentBox3 {
+        width: 100%;
+    }
+    nav {
+        height: 83px;
+    }
+    nav h2 {
+        margin-top: 45px;
+        margin-left: calc(50% - 94px);
+    }
+    .card {
+        transform: scale(0.9);
+        margin: auto;
+    }
+    #modal {
+        padding-top: 2.5%;
+    }
+    #modalContent {
+        margin-top: 0;
+    }
+    .modalHeader {
+        font-size: 25px;
+    }
+    h2.modalHeader {
+        font-size: 20px;
+    }
+    .toggledCoinDiv {
+        display: inline-block;
+        margin: -5px 0 -5px 0;
+        height: 150px;
+        width: 120px;
+        transform: scale(0.7);
+    }
+    .toggledCoinID {
+        font-size: 25px;
+    }
+    #modal img {
+        width: 40px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+    }
+    #modal .btn {
+        font-size: 18px;
+    }
+    #searchWrapper > * {
+        transform: scale(0.8);
+    }
+    #searchBtn {
+        right: -70px;
+    }
+    .clickedSearchBtn {
+        width: 200px !important;
+        left: calc(50% - 100px) !important;
+        height: 44px;
+        animation: searchFade 0.8s;
+    }
+    #searchContainer {
+        right: -65px;
+        top: -3px;
+    }
+    #countContainer {
+        top: -13%;
+        left: 4%;
+        border-bottom-right-radius: 10px;
+    }
+    #countGuidance {
+        position: absolute;
+        background-color: limegreen;
+        border-bottom-right-radius: 20px;
+        padding: 5px;
+        left: 0;
+        top: 43px;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    @keyframes fadeOutLeft {
+        0% {
+        opacity: 1;
+        position: absolute;
+        left: 0;
+    }
+        100% {
+            opacity: 0;
+            position: absolute;
+            left: -100%;
+        }
+    }
+    @keyframes fadeInLeft {
+        0% {
+        opacity: 0;
+        position: absolute;
+        right: -100%;
+    }
+        100% {
+            opacity: 1;
+            position: absolute;
+            right: 0;
+        }
+    }
+    @keyframes fadeOutRight {
+        0% {
+        opacity: 1;
+        position: absolute;
+        right: 0;
+    }
+        100% {
+            opacity: 0;
+            position: absolute;
+            right: -100%;
+        }
+    }
+    @keyframes fadeInRight {
+        0% {
+        opacity: 0;
+        position: absolute;
+        left: -100%;
+    }
+        100% {
+            opacity: 1;
+            position: absolute;
+            left: 0;
+        }
+    }
+    #sorry {
+        width: 300px;
+    }
+    #aboutMeBox div {
+        width: 300px;
+        margin-right: calc(50% - 150px);
+    }
+}
