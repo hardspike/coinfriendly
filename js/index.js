@@ -310,7 +310,7 @@ $("nav h2").click(function () {
 
                             //Pop Modal With Selected Coins
                             $("#modal").fadeIn();
-                            let $bufferIcon = $("<img src='assets/images/loading.png' class='bufferIcon'>");
+                            let $bufferIcon = $("<img src='./assets/images/loading.png' class='bufferIcon'>");
                             $("#toggledCoinsBox").append($bufferIcon);
                             setTimeout(function() {
                                 $("#modal .bufferIcon").remove();
@@ -418,7 +418,7 @@ $("nav h2").click(function () {
 
                 //Fetch Coin Data + Image
                 try {
-                    let $bufferIcon = $("<img src='assets/images/loading.png' class='bufferIcon'>");
+                    let $bufferIcon = $("<img src='./assets/images/loading.png' class='bufferIcon'>");
                     $currentColl.append($bufferIcon);
                     let coinData = await fetchData("https://api.coingecko.com/api/v3/coins/" + coinID);
 
@@ -511,7 +511,7 @@ $("nav h2").click(function () {
 
             $("#chartContainer").remove();
             $(".contentHeader").remove();
-            let $sorryImg = $("<img id='sorry' src='assets/images/sorry.png'>");
+            let $sorryImg = $("<img id='sorry' src='./assets/images/sorry.png'>");
             let $noCoinsSpan = $("<span id='noCoins'></span>");
             $noCoinsSpan.html("You have not selected any coin to show market value for.<br>Go back to homepage and select some.");
             $("#contentBox2").append($noCoinsSpan, $sorryImg);
@@ -525,7 +525,7 @@ $("nav h2").click(function () {
 
             $("#chartContainer").remove();
             $(".contentHeader").remove();
-            let $sorryImg = $("<img id='sorry' src='assets/images/sorry.png'>");
+            let $sorryImg = $("<img id='sorry' src='./assets/images/sorry.png'>");
             let $noValuesSpan = $("<span id='noValues'></span>");
             $noValuesSpan.html("Server returned no values for your selected coins.<br>Appearently, not all coins' data exist on the server.<br>" +
                 "Please go back to homepage and pick some different coins (ex. ZCN).");
@@ -644,7 +644,7 @@ $("nav h2").click(function () {
             " by typing in its' symbol (usually 3 characters), the coin will show up only if the user enters a coin's full symbol, not just" +
             " a part of it.<br><span class='emphasis'>Anything other than the linked libraries was uniquely created for this project.</span></span>");
         let $aboutMeHeader = $("<h2>About Myself</h2>");
-        $aboutMeDiv.html("<div id='aboutMeBox'><img src='/assets/images/me.jpg'><div><span>" +
+        $aboutMeDiv.html("<div id='aboutMeBox'><img src='./assets/images/me.jpg'><div><span>" +
             "My name is Ishay and I'm a FullStack Web Developer.<br>A creative, highly-motivated team player who's always looking to learn and develop.<br>Currently looking for a full-time Junior " +
             "Developer position with a positive working atmosphere.<br>ihardspike@gmail.com" +
             "</span></div></div>");
