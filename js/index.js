@@ -644,7 +644,7 @@ $("nav h2").click(function () {
             " by typing in its' symbol (usually 3 characters), the coin will show up only if the user enters a coin's full symbol, not just" +
             " a part of it.<br><span class='emphasis'>Anything other than the linked libraries was uniquely created for this project.</span></span>");
         let $aboutMeHeader = $("<h2>About Myself</h2>");
-        $aboutMeDiv.html("<div id='aboutMeBox'><img src='./assets/images/me.jpg'><div><span>" +
+        $aboutMeDiv.html("<div id='aboutMeBox'><img src='assets/images/me.jpg'><div><span>" +
             "My name is Ishay and I'm a FullStack Web Developer.<br>A creative, highly-motivated team player who's always looking to learn and develop.<br>Currently looking for a full-time Junior " +
             "Developer position with a positive working atmosphere.<br>ihardspike@gmail.com" +
             "</span></div></div>");
