@@ -372,7 +372,7 @@ $("nav h2").click(function () {
                         return false;
                     }
                 } else {
-                    if (index == 250) { return false }
+                    if (index == 249) { return false }
                 }
             });
             $("#countBox").attr("placeholder", $(".card").length);
