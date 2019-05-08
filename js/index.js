@@ -371,6 +371,8 @@ $("nav h2").click(function () {
                     if (index == parseInt(localStorage.getItem("coinCount")) - 1) {
                         return false;
                     }
+                } else {
+                    if (index == 250) { return false }
                 }
             });
             $("#countBox").attr("placeholder", $(".card").length);
